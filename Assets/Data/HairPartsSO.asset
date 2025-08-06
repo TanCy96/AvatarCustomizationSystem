@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85adb6150d9c044795d7c4911fb781c, type: 3}
+  m_Name: HairPartsSO
+  m_EditorClassIdentifier: 
+  _slotType: 3
+  _apparelParts:
+  - _apparelName: C_hair_afro.001
+    _prefab: {fileID: 7241678832772198468, guid: a1f4ef475d6dced4a8e613f7e5476eb8, type: 3}
+  - _apparelName: C_hair_bangs.001
+    _prefab: {fileID: 6462976918964153214, guid: 2f9913f0b9f3b1049a8fa08cbdb4674b, type: 3}
+  - _apparelName: C_hair_buzzcut
+    _prefab: {fileID: 1398059577341380902, guid: d20df99f819391b4cb82b98fb1c0a751, type: 3}
+  - _apparelName: C_hair_curly.001
+    _prefab: {fileID: 7478209522975825686, guid: 20f17f4a0c9171243b066fda72aafe22, type: 3}
+  - _apparelName: C_hair_long.001
+    _prefab: {fileID: 4404392203768034768, guid: e7778d4830cbe6542b1188aa3327a590, type: 3}
+  - _apparelName: C_hair_medium.001
+    _prefab: {fileID: 6046162921176745828, guid: 0c777e1212c3f434b8125a1cb242a76e, type: 3}
+  - _apparelName: C_hair_short.001
+    _prefab: {fileID: 3834789752565888624, guid: 8fa16b650ba3ac74688272a6c700845d, type: 3}
+  - _apparelName: C_hair_tied.001_bun
+    _prefab: {fileID: 7207276181113328629, guid: ccc0cea7d42e99143b52f324c194db2e, type: 3}
