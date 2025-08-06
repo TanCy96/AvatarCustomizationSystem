@@ -10,9 +10,21 @@ public class PartAttacher : MonoBehaviour
     
     public ApparelSlotType SlotType => _slotType;
     
+    public bool IsUsingSkinnedMeshRenderer =>
+        _slotType != ApparelSlotType.Hair && _slotType != ApparelSlotType.Accessory;
+    
     public void AttachPart(GameObject partPrefab)
     {
         GameObject part = Instantiate(partPrefab, transform);
+        if (!IsUsingSkinnedMeshRenderer)
+        {
+            if (mActivePart)
+                Destroy(mActivePart);
+            
+            mActivePart = part;
+            return;
+        }
+        
         SkinnedMeshRenderer partRenderer = partPrefab.GetComponent<SkinnedMeshRenderer>();
         // Prefab might have renderer in children instead
         if (!partRenderer)
