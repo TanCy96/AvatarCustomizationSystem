@@ -11,6 +11,7 @@ public class ApparelListUI : MonoBehaviour
     [SerializeField] private GameObject _buttonPrefab;
     [SerializeField] private List<ApparelPartsSO> _allPartData;
     [SerializeField] private AvatarController _avatarController; // ugly way but fast
+    [SerializeField] private CameraController _camController; // ugly way but fast
     
     private ApparelSlotType mCurrentApparelSlotType = ApparelSlotType.Shirt;
     
@@ -58,6 +59,13 @@ public class ApparelListUI : MonoBehaviour
         mCurrentApparelSlotType = (ApparelSlotType)slotTypeIndex;
         _avatarController.SetSlotType(mCurrentApparelSlotType);
         RefreshUI();
+        
+        if (mCurrentApparelSlotType == ApparelSlotType.Accessory ||
+            mCurrentApparelSlotType == ApparelSlotType.Hair)
+            _camController.SetFaceCamera();
+        else
+            _camController.SetFollowCamera();
+        
         Debug.Log($"Current Slot {mCurrentApparelSlotType}");
     }
 }
