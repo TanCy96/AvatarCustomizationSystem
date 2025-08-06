@@ -454,9 +454,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1517894500}
-        m_TargetAssemblyTypeName: AvatarController, Assembly-CSharp
-        m_MethodName: EquipShirt
+      - m_Target: {fileID: 1089074782}
+        m_TargetAssemblyTypeName: PartAttacher, Assembly-CSharp
+        m_MethodName: AttachPart
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1268234961751936632, guid: 4153467d310a98e4da12908a2646e80b, type: 3}
@@ -964,12 +964,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 731249386106909259, guid: 43d033dd570503541a824474a23e6880, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1517894497}
-    - targetCorrespondingSourceObject: {fileID: 731249386106909259, guid: 43d033dd570503541a824474a23e6880, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 731249385890762037, guid: 43d033dd570503541a824474a23e6880, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1517894500}
-    - targetCorrespondingSourceObject: {fileID: 731249386106909259, guid: 43d033dd570503541a824474a23e6880, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1517894499}
+      addedObject: {fileID: 1089074782}
     - targetCorrespondingSourceObject: {fileID: 1894241562971041569, guid: 43d033dd570503541a824474a23e6880, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1925956480}
@@ -985,6 +982,25 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 731249386106909256, guid: 43d033dd570503541a824474a23e6880, type: 3}
   m_PrefabInstance: {fileID: 1089074779}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1089074781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 731249385890762037, guid: 43d033dd570503541a824474a23e6880, type: 3}
+  m_PrefabInstance: {fileID: 1089074779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1089074782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089074781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ac3b078d2906541b0e8ec62c7c8947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _baseRenderer: {fileID: 640607937}
+  _currentPartName: 
 --- !u!4 &1237186778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5251472053307186535, guid: 07d4c6e881ed440428b0d68a2e7a2168, type: 3}
@@ -1149,32 +1165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1089074780}
---- !u!114 &1517894499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517894494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38ac3b078d2906541b0e8ec62c7c8947, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1517894500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517894494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d6cfa997dfac7941a984d2fce3c673f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _baseRenderer: {fileID: 640607937}
-  _attacher: {fileID: 1517894499}
 --- !u!1 &1551825378
 GameObject:
   m_ObjectHideFlags: 0
