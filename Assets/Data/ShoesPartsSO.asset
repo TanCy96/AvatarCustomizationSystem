@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85adb6150d9c044795d7c4911fb781c, type: 3}
+  m_Name: ShoesPartsSO
+  m_EditorClassIdentifier: 
+  _slotType: 2
+  _apparelParts:
+  - _apparelName: Shoes001_Boots
+    _prefab: {fileID: 518767668995847431, guid: fc4e68a33160a31439327b85c0db4dd8, type: 3}
+  - _apparelName: Shoes002_Sneakers
+    _prefab: {fileID: 5811828783763027550, guid: b8f9b6801e941814e8bcf93f8558bea3, type: 3}
+  - _apparelName: Shoes003_FlipFlop
+    _prefab: {fileID: 3201628217406574536, guid: 47d54e374377ec64fac594f21100c10f, type: 3}
+  - _apparelName: Shoes004_Sandals
+    _prefab: {fileID: 6476526042149993341, guid: c9b7e9b352670ac40bf6ba102a27ac82, type: 3}
+  - _apparelName: Shoes005_HighBoots
+    _prefab: {fileID: 8009205946279783867, guid: d8cd8ea23940d7a4f8e895dd1e602378, type: 3}
+  - _apparelName: Shoes006_LowSneakers
+    _prefab: {fileID: 5097115105850907606, guid: 8393335dc86443540aac32581d0c0e0a, type: 3}
+  - _apparelName: Shoes007_Chelsea
+    _prefab: {fileID: 5626152187909174573, guid: 583db8c814ce58f439bc9d40634539fe, type: 3}

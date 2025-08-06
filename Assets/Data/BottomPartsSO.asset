@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85adb6150d9c044795d7c4911fb781c, type: 3}
+  m_Name: BottomPartsSO
+  m_EditorClassIdentifier: 
+  _slotType: 1
+  _apparelParts:
+  - _apparelName: Bot001_Pants
+    _prefab: {fileID: 830489595045830828, guid: 128a2af1c2100be4aa107abd5fcbbf3a, type: 3}
+  - _apparelName: Bot002_Shorts
+    _prefab: {fileID: 4560706546617615246, guid: b49c4b322331206468adb84f6e6a81e6, type: 3}
+  - _apparelName: Bot003_ShortSkirt
+    _prefab: {fileID: 4805944093770963041, guid: 286a9af4f44ff3440a2da17a01b4e073, type: 3}
+  - _apparelName: Bot004_SkinnyJeans
+    _prefab: {fileID: 2201291937995366823, guid: 7110f6247b529f346bedb6b805b2ae36, type: 3}
+  - _apparelName: Bot005_BigShorts
+    _prefab: {fileID: 4544106450829454039, guid: 58804fe0998333c4a80876c7b6864def, type: 3}
+  - _apparelName: Bot006_LoosePants
+    _prefab: {fileID: 2005764829239824385, guid: b465f989f4851b441beb476b077195f9, type: 3}

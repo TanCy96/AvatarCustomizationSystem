@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85adb6150d9c044795d7c4911fb781c, type: 3}
+  m_Name: TopPartsSO
+  m_EditorClassIdentifier: 
+  _slotType: 0
+  _apparelParts:
+  - _apparelName: Top001_Shirt
+    _prefab: {fileID: 1268234961751936632, guid: 4153467d310a98e4da12908a2646e80b, type: 3}
+  - _apparelName: Top002_Jacket
+    _prefab: {fileID: 6335827794560628487, guid: 02238fa00b4018247b31343f1d717266, type: 3}
+  - _apparelName: Top003_Sweater
+    _prefab: {fileID: 958240551337214251, guid: f61a126e418bff4428c124cc365fb526, type: 3}
+  - _apparelName: Top004_Shirt
+    _prefab: {fileID: 6629698481836747221, guid: a834dfb8ce865f64699aabc4d346ed43, type: 3}
+  - _apparelName: Top005_ShirtVest
+    _prefab: {fileID: 5616379052051914930, guid: 3519cebfb82a49744b2583a5af3ccf9e, type: 3}
