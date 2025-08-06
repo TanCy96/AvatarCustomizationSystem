@@ -1,24 +1,17 @@
-using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public enum PartSlotType
-{
-    Shirt,
-    Pants,
-    Shoes,
-}
-
 public class PartAttacher : MonoBehaviour
 {
+    [SerializeField] private ApparelSlotType _slotType;
     [SerializeField] private SkinnedMeshRenderer _baseRenderer;
-    [ReadOnly, SerializeField] private string _currentPartName;
     
     private GameObject mActivePart;
     
+    public ApparelSlotType SlotType => _slotType;
+    
     public void AttachPart(GameObject partPrefab)
     {
-        _currentPartName = partPrefab.name;
         GameObject part = Instantiate(partPrefab, transform);
         SkinnedMeshRenderer partRenderer = partPrefab.GetComponent<SkinnedMeshRenderer>();
         // Prefab might have renderer in children instead
