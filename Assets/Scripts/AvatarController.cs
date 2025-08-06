@@ -15,15 +15,9 @@ public class AvatarController : MonoBehaviour
         }
     }
     
-    public void SetSlotType(int slotTypeIndex)
+    public void SetSlotType(ApparelSlotType slotType)
     {
-        if (!System.Enum.IsDefined(typeof(ApparelSlotType), slotTypeIndex))
-        {
-            Debug.LogError($"Invalid ApparelSlotType index: {slotTypeIndex}");
-            return;
-        }
-        mCurrentApparelSlotType = (ApparelSlotType)slotTypeIndex;
-        Debug.Log($"Current Slot {mCurrentApparelSlotType}");
+        mCurrentApparelSlotType = slotType;
     }
     
     public void ChangeApparel(GameObject newApparel)
