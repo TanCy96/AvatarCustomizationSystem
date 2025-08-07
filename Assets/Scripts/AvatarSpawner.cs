@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Pool;
 using Random = UnityEngine.Random;
@@ -7,6 +8,7 @@ using Random = UnityEngine.Random;
 public class AvatarSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _avatarPrefab;
+    [SerializeField] private TMP_Text _countText;
     
     private ObjectPool<GameObject> mAvatarPool;
     private List<GameObject> mAvatarList = new();
@@ -14,11 +16,13 @@ public class AvatarSpawner : MonoBehaviour
     private void Awake()
     {
         mAvatarPool = new ObjectPool<GameObject>(OnAvatarCreated, OnAvatarSpawned, OnAvatarReleased);
+        _countText.SetText("0");
     }
     
     public void OnSliderUpdated(float value)
     {
         int intValue = (int)value;
+        _countText.SetText(intValue.ToString());
         var difference = intValue - mAvatarList.Count;
         if (difference == 0)
             return;
